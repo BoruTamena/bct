@@ -1,4 +1,4 @@
-import { Accordion, Button, Card, CardContent, CardMedia, Container, Grid, Typography } from '@mui/material'
+import { Accordion, Button, Card, CardContent, CardHeader, CardMedia, Container, Divider, Grid, List, ListItem, ListItemText, Typography } from '@mui/material'
 import React from 'react'
 import CustomizedAccordions from './Accordion'
 
@@ -25,6 +25,28 @@ export const CourseDetail=()=>{
 
 
                 </Card>
+                
+                 <Card style={{marginTop:"5px"}} >
+                    <CardHeader
+                    title="CourseOutcome"
+                    />
+                    <CardContent>
+                        <List>
+                            <ListItem>
+                                <ListItemText>
+                                    <Typography>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi dolores veritatis ullam debitis, explicabo saepe assumenda asperiores officiis dolorem quam dolor sapiente, qui mollitia enim odit ipsum id soluta aspernatur.</Typography>
+                                </ListItemText>
+                            </ListItem>
+                            <Divider/>
+                            <ListItem>
+                                <ListItemText>
+                                    <Typography>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi dolores veritatis ullam debitis, explicabo saepe assumenda asperiores officiis dolorem quam dolor sapiente, qui mollitia enim odit ipsum id soluta aspernatur.</Typography>
+                                </ListItemText>
+                            </ListItem>
+                        </List>
+                    </CardContent>
+
+                 </Card>
 
             </Grid>
 

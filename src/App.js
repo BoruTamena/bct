@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Footer } from './components/Footer';
 import { CourseDetail } from './pages/CourseDetail';
+import { Blog } from './pages/Blog';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" exact element={<Home/>} />
           <Route path="/about"element={<About/>} />
           <Route path="/course"element={<CourseDetail/>} />
+          <Route path="/blog"element={<Blog/>} />
           {/* Add more routes as needed */}
 
         </Routes> 
