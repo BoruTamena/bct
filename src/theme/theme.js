@@ -10,7 +10,8 @@ const theme =createMuiTheme(
             main: '#5726E3', // Replace with your primary color
         },
         secondary: {
-            main: '#ff4081', // Replace with your secondary color
+            light:"#938eff",
+            main: '#BF00FF', // Replace with your secondary color
         },
         },
         typography: {

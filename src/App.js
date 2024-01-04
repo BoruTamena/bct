@@ -8,7 +8,10 @@ import { Partner } from './pages/Partner';
 import theme from './theme/theme';
 import { Header } from './components/Header';
 
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Footer } from './components/Footer';
+import { CourseDetail } from './pages/CourseDetail';
 
 
 function App() {
@@ -16,22 +19,19 @@ function App() {
   return (
     <div >
       <ThemeProvider theme={theme}>
-    
-        <Header/>
-     
-          <Hero/> 
-   
-      
-      <About/>
-      <Container>
-      <Grid container spacing={1}>
-        <Grid item md={4}>
-          <Courses/>
-        </Grid> 
+          
+         <Header/>
+         <Routes>
+          <Route path="/" exact element={<Home/>} />
+          <Route path="/about"element={<About/>} />
+          <Route path="/course"element={<CourseDetail/>} />
+          {/* Add more routes as needed */}
 
-      </Grid>
-      </Container>
-      <Partner/>
+        </Routes> 
+     
+        <br/><br/>
+          
+      <Footer/>
       </ThemeProvider>
     </div>
   );
