@@ -1,0 +1,15 @@
+[
+    {
+      "id":1,
+      "course":"",
+      "desc":"",
+      "objective":"",
+      "outcome":"",
+       "circulum":[
+         {
+            "id":1
+         }
+       ]
+
+    }
+]
