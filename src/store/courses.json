@@ -1,15 +1,153 @@
-[
-    {
+{
+  "courses": [
+    { 
       "id":1,
-      "course":"",
-      "desc":"",
-      "objective":"",
-      "outcome":"",
-       "circulum":[
-         {
-            "id":1
-         }
-       ]
-
+      "name": "Python Programming",
+      "description": "Introduction to Python programming language.",
+      "objectives": [
+        "Understand basic Python syntax and data types.",
+        "Learn control structures and functions.",
+        "Explore advanced topics like object-oriented programming."
+      ],
+      "outcomes": [
+        "Ability to write Python programs.",
+        "Understanding of programming concepts.",
+        "Problem-solving skills using Python."
+      ],
+      "curriculum": [
+        {
+          "name": "Introduction to Python",
+          "description": "Overview of Python and its use cases."
+        },
+        {
+          "name": "Data types and variables",
+          "description": "Understanding different data types and variable usage in Python."
+        },
+        {
+          "name": "Control structures",
+          "description": "Learn about if statements, loops, and decision-making in Python."
+        },
+        {
+          "name": "Functions and modules",
+          "description": "Creating and using functions, modular programming in Python."
+        },
+        {
+          "name": "Object-oriented programming basics",
+          "description": "Introduction to classes, objects, and inheritance in Python."
+        }
+      ]
+    },
+    {
+      "id":2,
+      "name": "C++ Programming",
+      "description": "Fundamentals of C++ programming language.",
+      "objectives": [
+        "Master C++ syntax and concepts.",
+        "Develop skills in memory management.",
+        "Explore object-oriented programming in C++."
+      ],
+      "outcomes": [
+        "Proficiency in C++ programming.",
+        "Understanding of memory allocation and deallocation.",
+        "Object-oriented programming expertise."
+      ],
+      "curriculum": [
+        {
+          "name": "Introduction to C++",
+          "description": "Overview of C++ language and its application."
+        },
+        {
+          "name": "Variables and data types",
+          "description": "Understanding different variables and data types in C++."
+        },
+        {
+          "name": "Control flow and functions",
+          "description": "Decision-making, loops, and function usage in C++."
+        },
+        {
+          "name": "Memory management",
+          "description": "Learn about pointers, dynamic memory allocation in C++."
+        },
+        {
+          "name": "Object-oriented programming in C++",
+          "description": "Classes, objects, and inheritance in C++."
+        }
+      ]
+    },
+    {
+      "id":3,
+      "name": "Java Programming",
+      "description": "Comprehensive Java programming course.",
+      "objectives": [
+        "Learn Java syntax and language features.",
+        "Explore multi-threading and exception handling.",
+        "Develop Java applications using frameworks."
+      ],
+      "outcomes": [
+        "Proficient in Java programming.",
+        "Skills in multi-threading and exception handling.",
+        "Experience with Java frameworks."
+      ],
+      "curriculum": [
+        {
+          "name": "Introduction to Java",
+          "description": "Overview of Java language and its applications."
+        },
+        {
+          "name": "Java syntax and language features",
+          "description": "Understanding syntax, data types, and language features in Java."
+        },
+        {
+          "name": "Multi-threading and exception handling",
+          "description": "Learn to work with multiple threads and handle exceptions in Java."
+        },
+        {
+          "name": "Java frameworks",
+          "description": "Introduction to popular Java frameworks for application development."
+        },
+        {
+          "name": "Java application development",
+          "description": "Hands-on projects using Java for application development."
+        }
+      ]
+    },
+    {
+      "id":4,
+      "name": "PHP Web Development",
+      "description": "Introduction to PHP for web development.",
+      "objectives": [
+        "Understand PHP syntax and basic web concepts.",
+        "Learn to build dynamic web pages and applications.",
+        "Explore databases and server-side scripting with PHP."
+      ],
+      "outcomes": [
+        "Proficiency in PHP programming for web development.",
+        "Ability to create dynamic web pages.",
+        "Skills in database integration using PHP."
+      ],
+      "curriculum": [
+        {
+          "name": "Introduction to PHP",
+          "description": "Overview of PHP and its role in web development."
+        },
+        {
+          "name": "PHP syntax and basic concepts",
+          "description": "Understanding PHP syntax, variables, and basic concepts."
+        },
+        {
+          "name": "Dynamic web page development",
+          "description": "Creating dynamic content using PHP in web pages."
+        },
+        {
+          "name": "Database integration with PHP",
+          "description": "Connecting PHP to databases, executing queries."
+        },
+        {
+          "name": "Server-side scripting",
+          "description": "Practical applications of server-side scripting in PHP."
+        }
+      ]
     }
-]
+  ]
+
+}

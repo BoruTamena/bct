@@ -13,6 +13,7 @@ import { Home } from './pages/Home';
 import { Footer } from './components/Footer';
 import { CourseDetail } from './pages/CourseDetail';
 import { Blog } from './pages/Blog';
+import { BlogDetail } from './pages/BlogDetail';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/about"element={<About/>} />
           <Route path="/course"element={<CourseDetail/>} />
           <Route path="/blog"element={<Blog/>} />
+          <Route path="/blogdetail"element={<BlogDetail/>} />
           {/* Add more routes as needed */}
 
         </Routes> 

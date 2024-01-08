@@ -1,9 +1,10 @@
-import { CardMedia, Grid, Typography } from "@mui/material";
+import { Card, CardContent, CardHeader, CardMedia, Grid, Typography } from "@mui/material";
 import React from "react";
 import AboutImg from '../assets/img/aboutimg.png'
 
 export const About=()=>{
     return(
+        <>
         <Grid container  spacing={3}>
             <Grid item md={6} sm={12}>
                 
@@ -28,5 +29,7 @@ export const About=()=>{
             </Grid>
 
         </Grid>
+
+        </>
     )
 }

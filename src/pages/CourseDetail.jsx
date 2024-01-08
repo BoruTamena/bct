@@ -1,9 +1,22 @@
 import { Accordion, Button, Card, CardContent, CardHeader, CardMedia, Container, Divider, Grid, List, ListItem, ListItemText, Typography } from '@mui/material'
 import React from 'react'
 import CustomizedAccordions from './Accordion'
-
+import { useLocation } from 'react-router-dom'
+import CoursesData from '../store/courses.json'
 
 export const CourseDetail=()=>{
+
+    
+    const { search } = useLocation();
+    const queryParams = new URLSearchParams(search);
+    const id = queryParams.get('id');
+
+    const filterCourses=(courses,id)=>{
+       return courses.filter(item=>item.id==id)
+    }
+
+    const course=filterCourses(CoursesData.courses,id)
+    console.log(course)
 
     return(
         <Container>  
@@ -16,7 +29,7 @@ export const CourseDetail=()=>{
                     />
                     <CardContent>
                         <Typography>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos alias rem, culpa ut maxime odit sunt nam modi veritatis ipsa. Ullam velit, eius harum accusamus sint excepturi corrupti deserunt magnam!
+                           {course[0].description}
                         </Typography>
 
                         <Button variant='contained' color="primary" style={{boxShadow:"none" ,borderRadius:"20px" ,padding:"10px",margin:"10px",width:"100%"}}> Start Course</Button>
@@ -28,21 +41,28 @@ export const CourseDetail=()=>{
                 
                  <Card style={{marginTop:"5px"}} >
                     <CardHeader
-                    title="CourseOutcome"
+                        title="CourseOutcome"
                     />
                     <CardContent>
                         <List>
-                            <ListItem>
+
+                        {
+                        course[0].outcomes.map((item,index)=>{
+                            return(
+                            <div key={index}>
+                             <ListItem>
                                 <ListItemText>
-                                    <Typography>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi dolores veritatis ullam debitis, explicabo saepe assumenda asperiores officiis dolorem quam dolor sapiente, qui mollitia enim odit ipsum id soluta aspernatur.</Typography>
+                                    <Typography>{item}</Typography>
                                 </ListItemText>
                             </ListItem>
                             <Divider/>
-                            <ListItem>
-                                <ListItemText>
-                                    <Typography>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi dolores veritatis ullam debitis, explicabo saepe assumenda asperiores officiis dolorem quam dolor sapiente, qui mollitia enim odit ipsum id soluta aspernatur.</Typography>
-                                </ListItemText>
-                            </ListItem>
+                            </div>
+                           
+                            )
+                        })
+                        }
+                        
+                            
                         </List>
                     </CardContent>
 
@@ -54,9 +74,17 @@ export const CourseDetail=()=>{
                 <Card>
                     <CardContent>
                         <Typography variant="h6">Course Objective</Typography>
-                        <Typography>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque officiis corporis cum, provident vel doloribus optio quae harum odit! Ipsa cumque optio nobis beatae magni enim dolorem commodi velit voluptate?d
-                        </Typography>
+                        <List>
+                            {course[0].objectives.map((item,index)=>{
+                                return(
+                                    <ListItem>
+                                        <ListItemText>
+                                            {item}
+                                        </ListItemText>
+                                    </ListItem>
+                                )
+                            })}
+                        </List>
                     </CardContent>
                 </Card>
 

@@ -1,0 +1,26 @@
+{
+    "blog": [
+      {
+        "id": 1,
+        "title": "Getting Started with React",
+        "author": "John Doe",
+        "date": "2022-01-15",
+        "content": "This is the content of the blog post. It covers the basics of React and how to set up a new React project."
+      },
+      {
+        "id": 2,
+        "title": "JavaScript ES6 Features You Should Know",
+        "author": "Jane Smith",
+        "date": "2022-02-03",
+        "content": "Last summer, I embarked on an unforgettable expedition into the heart of the Amazon Rainforest. The sheer magnitude of biodiversity, the vibrant kaleidoscope of flora and fauna, and the symphony of nature's sounds surrounded me as I delved deeper into the lush green expanse. Traversing through dense undergrowth and navigating the winding waterways, I encountered exotic creatures, from vividly colored macaws soaring overhead to elusive jaguars silently prowling in the shadows. The immersive experience not only unveiled the incredible interconnectedness of this ecosystem but also highlighted the urgent need for its conservation. In this blog post, I aim to share the magic of the Amazon, from the towering canopy to the rich forest floor, and advocate for the preservation of this invaluable natural treasure that sustains life on our planet."
+      },
+      {
+        "id": 3,
+        "title": "Introduction to CSS Grid Layout",
+        "author": "Sam Brown",
+        "date": "2022-03-20",
+        "content": "Learn how to use CSS Grid Layout to create responsive and flexible web layouts. This blog post covers the basics and provides examples."
+      }
+    ]
+  }
+  

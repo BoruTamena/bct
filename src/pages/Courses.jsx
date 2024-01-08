@@ -3,6 +3,8 @@ import { Button, Card, CardActionArea, CardActions, CardContent, CardHeader, Car
 import React from "react"
 
 export const Courses=({content,title="Python"})=>{
+
+    
     return (
         <Card elevation={4}>
             <CardMedia
